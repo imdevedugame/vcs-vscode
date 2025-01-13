@@ -1,0 +1,57 @@
+{
+    "name": "VCS-VSCODE",
+    "displayName": "VCS Version Control",
+    "description": "Pantau riwayat pengkodean Anda dengan mudah menggunakan ekstensi VCS Local History.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "main": "./src/extension.js",
+    "activationEvents": [
+        "onCommand:imvanz.init",
+        "onCommand:imvanz.viewHistory",
+        "onSaveTextDocument"
+    ],
+    "contributes": {
+        "commands": [{
+                "command": "imvanz.init",
+                "title": "IM Init"
+            },
+            {
+                "command": "imvanz.viewHistory",
+                "title": "View History"
+            },
+            {
+                "command": "imvanz.applyHistory",
+                "title": "Apply History"
+            },
+            {
+                "command": "imvanz.deleteHistory",
+                "title": "Delete History"
+            }
+        ],
+        "views": {
+            "explorer": [{
+                "id": "imvanzHistory",
+                "name": "IMVanz History"
+            }]
+        },
+        "keybindings": [{
+            "command": "imvanz.init",
+            "key": "ctrl+shift+i",
+            "when": "editorTextFocus"
+        }]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.75.0",
+        "eslint": "^9.0.0"
+    }
+}
