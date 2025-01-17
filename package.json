@@ -1,8 +1,10 @@
 {
     "name": "VCS-VSCODE",
     "displayName": "VCS Version Control",
-    "description": "Pantau riwayat pengkodean Anda dengan mudah menggunakan ekstensi VCS Local History.",
+    "description": "Simpan Riwayat Pengkodean anda dengan aman!",
     "version": "0.0.1",
+    "publisher": "Imvanz",
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.75.0"
     },
@@ -13,6 +15,10 @@
     "activationEvents": [
         "onCommand:imvanz.init",
         "onCommand:imvanz.viewHistory",
+        "onCommand:imvanz.applyHistory",
+        "onCommand:imvanz.deleteHistory",
+        "onCommand:imvanz.searchHistory",
+        "onCommand:imvanz.undoLastSave",
         "onSaveTextDocument"
     ],
     "contributes": {
@@ -31,6 +37,14 @@
             {
                 "command": "imvanz.deleteHistory",
                 "title": "Delete History"
+            },
+            {
+                "command": "imvanz.searchHistory",
+                "title": "Search History"
+            },
+            {
+                "command": "imvanz.undoLastSave",
+                "title": "Undo Last Save"
             }
         ],
         "views": {
@@ -39,6 +53,7 @@
                 "name": "IMVanz History"
             }]
         },
+
         "keybindings": [{
             "command": "imvanz.init",
             "key": "ctrl+shift+i",

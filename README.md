@@ -1,65 +1,63 @@
-# VCS-VSCODE README
 
-This is the README for your extension "VCS-VSCODE". After writing up a brief description, we recommend including the following sections.
 
-## Features
+# **VCS-VSCODE**
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+**VCS-VSCODE** adalah ekstensi Visual Studio Code yang membantu Anda mencatat dan melihat riwayat perubahan file secara lokal di folder khusus. Dengan ekstensi ini, Anda dapat dengan mudah melacak perubahan yang terjadi selama pengkodean, memastikan tidak ada versi penting yang hilang.
 
 ---
 
-## Working with Markdown
+## **Fitur Utama**
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+1. **Menyimpan Riwayat Secara Otomatis**  
+   - Setiap kali file disimpan (`Ctrl+S`), ekstensi ini mencatat perubahan secara otomatis.
+   - Riwayat tersimpan di folder `.imvanz`, yang terletak di root workspace Anda.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
+2. **Melihat Riwayat File**  
+   - Akses semua riwayat file langsung dari sidebar **IMVanz History**.
+   - Dengan mudah melihat versi sebelumnya dari file Anda.
 
-## For more information
+---
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## **Cara Menggunakan**
 
-**Enjoy!**
+### **1. Inisialisasi Folder Riwayat**
+- Tekan **`Ctrl+Shift+I`** saat pertama kali memulai ekstensi.
+- Folder `.imvanz` akan dibuat di root workspace Anda untuk menyimpan semua log perubahan.
+
+### **2. Menyimpan Riwayat**
+- Setiap kali Anda menyimpan file (`Ctrl+S`), ekstensi ini akan secara otomatis mencatat perubahan dan menyimpannya di folder `.imvanz`.
+
+### **3. Melihat Riwayat**
+- Buka **sidebar Explorer** dan cari **IMVanz History**.
+- Pilih file untuk melihat semua versi yang telah tersimpan.
+
+---
+
+## **Kelebihan Ekstensi**
+- **Penyimpanan Lokal**: Semua riwayat tersimpan secara lokal di folder `.imvanz`, sehingga tidak memerlukan koneksi internet.
+- **Privasi Data**: Tidak ada data yang diunggah ke server eksternal. Semua riwayat aman di perangkat Anda.
+- **Integrasi Mudah**: Berjalan mulus dengan Visual Studio Code tanpa konfigurasi tambahan.
+
+---
+
+## **Catatan**
+- Riwayat hanya tersedia untuk workspace yang sama tempat folder `.imvanz` dibuat.
+- Folder `.imvanz` adalah tempat penyimpanan utama untuk semua log perubahan.
+
+---
+
+## **Kontribusi**
+Jika Anda menemukan bug atau memiliki saran untuk fitur baru, silakan buka bisa dm saya!! 
+---
+
+## **Follow dan Dukungan**
+
+Ikuti perjalanan kami dan berikan dukungan Anda:
+- **Instagram**: [@imvanz_](https://instagram.com/imvanz_)
+- **GitHub**: [imdevedugame](https://github.com/imdevedugame)
+
+Terima kasih telah mendukung kami! Dengan dukungan Anda, kami terus dapat meningkatkan ekstensi ini dan membuat pengkodean lebih mudah untuk semua orang.
+
+---
+
+z
