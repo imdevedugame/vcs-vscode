@@ -12,6 +12,12 @@
         "Other"
     ],
     "main": "./src/extension.js",
+"repository": {
+  "type": "git",
+  "url": "https://github.com/imdevedugame/vcs-vscode.git"
+},
+
+
     "activationEvents": [
         "onCommand:imvanz.init",
         "onCommand:imvanz.viewHistory",
@@ -19,12 +25,28 @@
         "onCommand:imvanz.deleteHistory",
         "onCommand:imvanz.searchHistory",
         "onCommand:imvanz.undoLastSave",
-        "onSaveTextDocument"
+        "onCommand:imvanz.disableExtension",
+        "onCommand:imvanz.quickDiff",
+        "onCommand:imvanz.createBranch",
+        "onCommand:imvanz.importVersion",
+        "onCommand:imvanz.searchInHistory",
+        "onCommand:imvanz.showChangelog"
     ],
+
     "contributes": {
+
+        "timeline": [{
+            "id": "ImvanzTimeline",
+            "label": "IMVanz Timeline"
+        }],
+
         "commands": [{
                 "command": "imvanz.init",
                 "title": "IM Init"
+            },
+            {
+                "command": "imvanz.selectHistory",
+                "title": "Select History"
             },
             {
                 "command": "imvanz.viewHistory",
@@ -45,6 +67,30 @@
             {
                 "command": "imvanz.undoLastSave",
                 "title": "Undo Last Save"
+            },
+            {
+                "command": "imvanz.disableExtension",
+                "title": "Disable VCS-VSCODE Extension"
+            },
+            {
+                "command": "imvanz.quickDiff",
+                "title": "Quick Diff"
+            },
+            {
+                "command": "imvanz.createBranch",
+                "title": "Create Branch"
+            },
+            {
+                "command": "imvanz.importVersion",
+                "title": "Import Version"
+            },
+            {
+                "command": "imvanz.searchInHistory",
+                "title": "Search in History"
+            },
+            {
+                "command": "imvanz.showChangelog",
+                "title": "Show Changelog"
             }
         ],
         "views": {
@@ -53,13 +99,13 @@
                 "name": "IMVanz History"
             }]
         },
-
         "keybindings": [{
             "command": "imvanz.init",
             "key": "ctrl+shift+i",
             "when": "editorTextFocus"
         }]
     },
+
     "scripts": {
         "lint": "eslint .",
         "pretest": "npm run lint",
